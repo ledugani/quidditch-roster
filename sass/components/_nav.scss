@@ -1,8 +1,33 @@
+@import '../variables';
+
 nav {
-  background-color: palevioletred;
+  background-color: $lightgray;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+
+  & > * {
+    padding: 0 20px;
+    line-height: 56px;
+    height: 56px;
+  }
+
+  & + * {
+    margin-top: 76px;
+  }
+
+  ul {
+    list-style-type: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+  }
+
 }
